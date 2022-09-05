@@ -6,7 +6,8 @@ edition = "2021"
 [workspace]
 
 [build-dependencies]
-risc0-build = "0.11.0-rc.4"
+risc0-build = { git = "https://github.com/dymchenkko/risc0.git", branch = "feat/cargo-test"}
 
 [dependencies]
-risc0-zkvm-guest = "0.11.0-rc.4"
+risc0-zkvm-guest = { git = "https://github.com/dymchenkko/risc0.git", branch = "feat/cargo-test"}
+risc0-zkvm-platform = { git = "https://github.com/dymchenkko/risc0.git", branch = "feat/cargo-test"}
