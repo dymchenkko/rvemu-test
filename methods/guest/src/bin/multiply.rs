@@ -26,7 +26,7 @@ impl Dram {
     /// Create a new memory object with default memory size.
     pub fn new() -> Self {
         Self {
-            dram: vec![1; 26214401],
+            dram: vec![1; DRAM_SIZE.try_into().unwrap()],
             code_size: 0,
         }
     }
